@@ -1,5 +1,5 @@
 /*
- * Jester JavaScript Library v0.2
+ * Jester JavaScript Library v0.3
  * http://github.com/plainview/Jester
  *
  * Easy JavaScript gesture recognition.
@@ -300,6 +300,8 @@
 
             var touchEnd = function(evt) {
 
+                var swipeDirection;
+
                 eventSet.execute("end", touches, evt);
 
                 if(opts.preventDefault) evt.preventDefault();
@@ -310,7 +312,7 @@
                     if(touches.touch(0).total.x() <= opts.tapDistance && touches.touch(0).total.y() <= opts.tapDistance && touches.touch(0).total.time() < opts.tapTime) {
                         eventSet.execute("tap", touches);
                     }
-    
+
                     // doubletap
                     if(touches.touch(0).total.time() < opts.tapTime) {
                         var now = (new Date()).getTime();
@@ -320,9 +322,15 @@
                         previousTapTime = now;
                     }
 
-                    // swipe
+                    // swipe left/right
                     if(Math.abs(touches.touch(0).total.x()) >= opts.swipeDistance) {
-                        var swipeDirection = touches.touch(0).total.x() < 0 ? "left" : "right";
+                        swipeDirection = touches.touch(0).total.x() < 0 ? "left" : "right";
+                        eventSet.execute("swipe", touches, swipeDirection);
+                    }
+
+                    // swipe up/down
+                    if(Math.abs(touches.touch(0).total.y()) >= opts.swipeDistance) {
+                        swipeDirection = touches.touch(0).total.y() < 0 ? "up" : "down";
                         eventSet.execute("swipe", touches, swipeDirection);
                     }
 
