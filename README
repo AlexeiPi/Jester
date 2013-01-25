@@ -26,7 +26,7 @@ For further documentation check the Jester GitHub Wiki: http://wiki.github.com/p
 2.3 - Options
 2.4 - TouchGroup Object
 2.5 - Touch Object
-3.0 - Bugs, Questions, Credit
+3.0 - Bugs, Questions
 
 
  -1 Before Using
@@ -260,10 +260,10 @@ Touch.total.
             x()         : the total x distance travelled
             y()         : the total y distance travelled
             time()      : the total time of this touch
-            
 
-3.0 Bugs, Questions, Credit
----------------------------
+
+3.0 Bugs, Questions
+-------------------
 
 Got comments, questions or suggestions?  Get in touch via Github - http:/github.com/plainview/Jester
 

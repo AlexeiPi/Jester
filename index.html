@@ -38,6 +38,11 @@
                     else if(direction === "left")
                         matrix.e -= 50;
 
+                    if(direction === "up")
+                        matrix.f -= 50;
+                    else if(direction === "down")
+                        matrix.f += 50;
+
                     if(matrix.e < -100 || matrix.e > 250)
                         matrix.e = 0;
 
