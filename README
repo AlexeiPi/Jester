@@ -32,12 +32,10 @@ For further documentation check the Jester GitHub Wiki: http://wiki.github.com/p
  -1 Before Using
 ----------------
 
-Jester is now 2 years old.  It has received a few patches during that time but I've
-largely ignored it since release.  There are many newer and more actively maintained projects
-for this sort of thing.  For example,
+Jester is now 2 years old.  It has received a few patches during that time but I've largely ignored it since release.  There are many newer and more actively maintained projects for this sort of thing.  For example,
 
-[Hammer.js](http://eightmedia.github.com/hammer.js/) for all manner of multi-touch goodness.
-[Zepto.js](http://zeptojs.com/#touch) for a jQuery-lite library with basic gesture support.
+http://eightmedia.github.com/hammer.js/ - Hammer.js - for all manner of multi-touch goodness.
+http://zeptojs.com/#touch - Zepto.js - for a jQuery-lite library with basic gesture support.
 
 
 0.0 Intro
