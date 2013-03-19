@@ -35,6 +35,7 @@ For further documentation check the Jester GitHub Wiki: http://wiki.github.com/p
 Jester is now 2 years old.  It has received a few patches during that time but I've largely ignored it since release.  There are many newer and more actively maintained projects for this sort of thing.  For example,
 
 http://eightmedia.github.com/hammer.js/ - Hammer.js - for all manner of multi-touch goodness.
+https://github.com/jairajs89/Touchy.js - Touchy.js - simple light-weight lib for dealing with touch.
 http://zeptojs.com/#touch - Zepto.js - for a jQuery-lite library with basic gesture support.
 
 
